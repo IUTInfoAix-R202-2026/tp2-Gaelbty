@@ -31,14 +31,14 @@ class FormulaireConnexionTest {
     new FormulaireConnexion().start(stage);
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void laFenetreEstVisible(FxRobot robot) {
     assertThat(stage.isShowing()).as("le Stage doit être affiché").isTrue();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(2)
   void leChampIdentifiantExiste(FxRobot robot) {
@@ -46,7 +46,7 @@ class FormulaireConnexionTest {
     assertThat(tf).as("un TextField avec id 'user-id' doit exister").isNotNull();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(3)
   void leChampMotDePasseExiste(FxRobot robot) {
